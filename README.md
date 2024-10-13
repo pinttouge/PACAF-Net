@@ -47,6 +47,3 @@ Currently only support training on single GPU.
 Pretrained models can be downloaded from [[Google Drive]](https://drive.google.com/file/d/1UV0erOO5Y06vwOOVbU98vX6BE3uvfQMu/view?usp=sharing)
 
 
-### Acknowledgments
-We thank the authors of [[EGE-UNet]](https://github.com/JCruan519/EGE-UNet) and [[SelfReformer]](https://github.com/BarCodeReader/SelfReformer/tree/main) for their open-source codes.
-
