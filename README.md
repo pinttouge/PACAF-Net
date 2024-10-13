@@ -44,6 +44,6 @@ If you want to train/test with different settings, please refer to **option.py**
 Currently only support training on single GPU.
 
 ### Pretrain Model & Pre-calculated Saliency Map
-Pretrained models can be downloaded from [[Google Drive]](https://drive.google.com/file/d/1UV0erOO5Y06vwOOVbU98vX6BE3uvfQMu/view?usp=sharing)
+When testing, you need to download the pre-trained model. Pretrained models can be downloaded from [[Google Drive]](https://drive.google.com/drive/folders/1arceMK6U_24wxM36CVj73WYbJR2uMICd?usp=drive_link)
 
 
