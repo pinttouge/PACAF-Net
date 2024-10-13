@@ -6,13 +6,13 @@ def parse_args():
     parser.add_argument("--seed", type=int, default=1)
 
     # models
-    parser.add_argument("--pretrain", type=str, default="best_for_isic18.pt")
+    parser.add_argument("--pretrain", type=str, action='store', default="")
     parser.add_argument("--model", type=str, default="network_PS")
     parser.add_argument("--GPU_ID", type=int, default=0)
     parser.add_argument("--pvt_path", type=str, default="./model/pretrain/pvt_v2_b2.pth")
 
     # dataset
-    parser.add_argument("--dataset_root", type=str, default='E:/data/ImgSeg/data_isic1718/isic2018/')
+    parser.add_argument("--dataset_root", action='store', type=str, default='')
     parser.add_argument("--dataset", type=str, default="ISIC2018")
     parser.add_argument("--test_dataset", type=str, default="ISIC2018")
 
@@ -36,7 +36,7 @@ def parse_args():
     parser.add_argument("--save_all", action="store_true", default=False) # save each stage result
     parser.add_argument("--ckpt_root", type=str, default="./ckpt/")
     parser.add_argument("--save_root", type=str, default="./output")
-    parser.add_argument("--save_msg", type=str, default="isic2018")
+    parser.add_argument("--save_msg", type=str, default="")
     parser.add_argument("--save", type=str, default="ckpt/")
 
     return parser.parse_args()
