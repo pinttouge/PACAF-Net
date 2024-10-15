@@ -18,7 +18,7 @@ class Solver():
         self.dev = torch.device("cuda:{}".format(opt.GPU_ID) if torch.cuda.is_available() else "cpu")
         self.net = module.Net(opt)
         if not train:
-            self.net.load_state_dict(torch.load('D:/pytorchProj/PSNet/ckpt/best_for_isic18.pt'))
+            self.net.load_state_dict(torch.load(opt.pretrain))
         self.net = self.net.to(self.dev)
 
         msg = "# params:{}\n".format(sum(map(lambda x: x.numel(), self.net.parameters())))
