@@ -39,9 +39,7 @@ class ConfidentLoss:
                 target = F.pixel_unshuffle(target, scale)
                 stage_sal_loss = self.weighted_bce(sal_pred, target)
             else:
-                if scale > 1:
-                    sal_pred = F.pixel_shuffle(sal_pred, scale)
-                    # sal_pred = F.interpolate(sal_pred, size=(256,256), mode='bilinear', align_corners=False)
+                sal_pred = F.pixel_shuffle(sal_pred, scale)
                 stage_sal_loss = self.weighted_bce(sal_pred, target)
                 if count % 3 == 0:
                     stage_sal_loss += self.confident_loss(sal_pred, target, beta=2)
