@@ -1,4 +1,4 @@
-# PSNet-pytorch
+# PACAF-Net-pytorch
 
 ### Prerequisites
 Ubuntu 18.04\
